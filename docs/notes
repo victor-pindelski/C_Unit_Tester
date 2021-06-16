@@ -1,0 +1,36 @@
+=======================================
+         Notes - C Unit Tester
+=======================================
+
+
+
+
+
+General
+=======================================
+
+All test functions should return a status (signed char) :
+
+-> 1 if test is passed.
+-> 0 if test is not passed.
+
+All test functions should be called following this pattern :
+
+            cut_<something>(param1, param2);
+
+For instance :
+
+            cut_assert_eq(int a, int b);
+
+
+
+
+
+Pointers
+=======================================
+- test whether a pointer is null
+- test whether a pointer is valid memory location
+
+If a pointer isn't valid : report the line / column number where it happened.
+Provide a possibility to avoid the segfault (exit the program) or continue
+anyway.
